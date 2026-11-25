@@ -1,0 +1,13 @@
+date,produit,categorie,quantite,prix_unitaire,ville
+2026-01-05,Clavier,Informatique,2,45.0,Paris
+2026-01-05,Souris,Informatique,5,15.0,paris
+2026-01-06,Ecran,Informatique,1,180.0,Lyon
+2026-01-06,Chaise,Mobilier,3,90.0, Lyon
+2026-01-07,Bureau,Mobilier,1,250.0,Marseille
+2026-01-05,Clavier,Informatique,2,45.0,Paris
+2026-01-08,Lampe,Mobilier,,30.0,Lille
+2026-01-08,Souris,Informatique,-1,15.0,Marseille
+2026-01-09,Casque,Informatique,4,60.0,LILLE
+2026-01-10,Etagere,Mobilier,2,75.0,Bordeaux
+2026-01-10,Ecran,Informatique,2,180.0,Paris
+2026-01-11,Chaise,Mobilier,2,90.0,Bordeaux
