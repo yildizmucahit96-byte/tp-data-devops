@@ -1,0 +1,32 @@
+name: CI pipeline data
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le code
+        uses: actions/checkout@v7
+
+      - name: Installer Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Installer les dépendances
+        run: pip install -r requirements.txt
+
+      - name: Lancer les tests
+        run: pytest -v
+
+      - name: Exécuter le pipeline
+        run: python pipeline.py
+
+      - name: Publier les résultats
+        uses: actions/upload-artifact@v7
+        with:
+          name: resultats
+          path: output/
